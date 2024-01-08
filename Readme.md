@@ -1,50 +1,3 @@
-# CS542: Assignment 3
-## Name: Swapnil Tukaram Mane
-
------------------------------------------------------------------------
------------------------------------------------------------------------
-
-Following are the commands and the instructions to run ANT on your project.
-#### Note: build.xml is present in /swapnil_mane_assign3/studentCourseSequencer/src/build.xml.
-
------------------------------------------------------------------------
-## Instruction to clean:
-
-#### Command: ant -buildfile swapnil_mane_assign3/studentCourseSequencer/src/build.xml clean
-
-Description: It cleans up all the .class files that were generated when you
-compiled your code.
-
------------------------------------------------------------------------
-## Instruction to compile:
-
-#### Command: ant -buildfile swapnil_mane_assign3/studentCourseSequencer/src/build.xml all
-
-Description: Compiles your code and generates .class files inside the BUILD folder.
-
------------------------------------------------------------------------
-## Instruction to run:
-
-#### Command: ant -buildfile swapnil_mane_assign3/studentCourseSequencer/src/build.xml run -Darg0=input.txt -Darg1=output.txt -Darg2=errorLog.txt -Darg3=Logger.txt -Darg4=0
-
-## Replace <fileName.txt> with real file names. The run command requires total 5 arguments: 
-## args[0]: Input file name
-## args[1]: Output file name
-## args[2]: Error logger file path
-## args[3]: Logger file path
-## args[4]: Debug level (0, 1, 2, 3)
-
-## For example, if the files are available in the path,
-## you can run it in the following manner:
-
-ant -buildfile swapnil_mane_assign3/studentCourseSequencer/src/build.xml run -Darg0=input.txt -Darg1=output.txt -Darg2=errorLog.txt -Darg3=Logger.txt -Darg4=0
-
-Note: Arguments accept the absolute path of the files.
-
------------------------------------------------------------------------
-#### No. of Slack Days used: 03
-#### Total Slack Days used so far: 04 (including 01 slack day used for assignment 2)
------------------------------------------------------------------------
 ## Description:
 This Java program manages the graduation timeline for students pursuing a degree in Computer Science. It uses the State pattern to capture degree requirements and efficiently assigns courses to students while considering prerequisites and constraints. The program ensures that each student completes the required number of courses in different groups and maintains a wait-list for courses that cannot be immediately assigned. It also stops processing courses for students once they become eligible for graduation.
 
@@ -100,17 +53,45 @@ If a student does not graduate, it writes a line at the end indicating this, wit
 4. The program will process the input file and generate an output file (output.txt) with the results. Each line in the output file represents a student's course sequence, the number of semesters it took, and the number of state changes.
 
 Use the "Course Sequence Manager for Computer Science Graduates" project to manage the graduation timeline for students in a Computer Science degree program, assign courses efficiently, and track their progress toward graduation.
+
 -----------------------------------------------------------------------
-### Academic Honesty statement:
 -----------------------------------------------------------------------
 
-"I have done this assignment completely on my own. I have not copied
-it, nor have I given my solution to anyone else. I understand that if
-I am involved in plagiarism or cheating I will have to sign an
-official form that I have cheated and that this form will be stored in
-my official university record. I also understand that I will receive a
-grade of 0 for the involved assignment for my first offense and that I
-will receive a grade of F for the course for any additional
-offense.""
+Following are the commands and the instructions to run ANT on your project.
+#### Note: build.xml is present in /swapnil_mane_assign3/studentCourseSequencer/src/build.xml.
+
+-----------------------------------------------------------------------
+## Instruction to clean:
+
+#### Command: ant -buildfile swapnil_mane_assign3/studentCourseSequencer/src/build.xml clean
+
+Description: It cleans up all the .class files that were generated when you
+compiled your code.
+
+-----------------------------------------------------------------------
+## Instruction to compile:
+
+#### Command: ant -buildfile swapnil_mane_assign3/studentCourseSequencer/src/build.xml all
+
+Description: Compiles your code and generates .class files inside the BUILD folder.
+
+-----------------------------------------------------------------------
+## Instruction to run:
+
+#### Command: ant -buildfile swapnil_mane_assign3/studentCourseSequencer/src/build.xml run -Darg0=input.txt -Darg1=output.txt -Darg2=errorLog.txt -Darg3=Logger.txt -Darg4=0
+
+## Replace <fileName.txt> with real file names. The run command requires total 5 arguments: 
+## args[0]: Input file name
+## args[1]: Output file name
+## args[2]: Error logger file path
+## args[3]: Logger file path
+## args[4]: Debug level (0, 1, 2, 3)
+
+## For example, if the files are available in the path,
+## you can run it in the following manner:
+
+ant -buildfile swapnil_mane_assign3/studentCourseSequencer/src/build.xml run -Darg0=input.txt -Darg1=output.txt -Darg2=errorLog.txt -Darg3=Logger.txt -Darg4=0
+
+Note: Arguments accept the absolute path of the files.
 
 Date: November 17th, 2023
